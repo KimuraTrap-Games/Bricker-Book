@@ -2,12 +2,12 @@
   .footer {
     text-align: center;
     padding: 2rem 0;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: lightgrey;
+    border-top: 3px solid #1e1e1e;
   }
   
   .footer p {
     font-size: 1rem;
-    color: #777;
+    color: #1e1e1e;
   }
   
