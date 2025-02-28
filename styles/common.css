@@ -27,7 +27,6 @@
   }
 
   .cta-button {
-<<<<<<< Updated upstream
     background-color: #1e1e1e;
     border: none;
     color: white;
@@ -38,7 +37,6 @@
     font-size: 16px;
     cursor: pointer;
     margin-right: 16px;
-=======
 	background-color: black;
 	color: white;
 	padding: 10px;
@@ -48,7 +46,6 @@
 	border: solid 2px black;
 	border-radius: 25px;
 	position: relative;
->>>>>>> Stashed changes
   }
 
   /*Common Styles */
