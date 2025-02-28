@@ -1,25 +1,32 @@
-  /* Header Section */
+/* Header Section */
 .header {
-  background-color: lightgrey;
+  background-color: lightgrey;  /* Keeps it visible when sticky */
   text-align: center;
-  padding: 5rem;
+  padding: 2rem 0;  /* Reduced padding for better spacing */
   border-bottom: solid 5px black;
   position: sticky;
   top: 0;
+  z-index: 9999; /* Ensures it stays above other elements */
+  width: 100%;
 }
-  
+
+/* Subtitle Styling */
 .header .subtitle {
   font-size: 20px;
   color: #1e1e1e;
 }
 
+/* Navigation Wrapper */
 .nav-links-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: lightgrey;  /* Matches header for seamless sticky effect */
+  padding: 1rem 0;  /* Adds some spacing */
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 10px; /* Adjust spacing between buttons */
