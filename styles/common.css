@@ -1,0 +1,42 @@
+/* Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+
+/* Button Styles */
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+    border: solid black;
+  }
+  
+  .cta-button:active {
+    background-color: goldenrod;
+    color: white;
+    box-shadow: solid black;
+  }
+
+  .cta-button {
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    margin-right: 16px;
+  }

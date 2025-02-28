@@ -1,17 +1,4 @@
 /* Header Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-  
-  body {
-    font-family: 'Georgia', serif;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
-  }
   
   .container {
     width: 80%;
