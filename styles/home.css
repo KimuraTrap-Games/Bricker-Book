@@ -3,6 +3,7 @@
   /* Main Section */
   .main {
     padding: 4rem 0;
+    overflow-x: hidden;
   }
   
   .book-overview {
@@ -21,19 +22,28 @@
     float: right;
   }
     
-  /* Resources Section */
-  .resources {
-    padding: 3rem 0;
-    background-color: ;
-  }
-  
-  .resources .resource-link {
-    display: block;
-    margin: 1rem 0;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .resources .resource-link:hover {
-    color: goldenrod;
-  }
+/* Resources Section */
+.resources {
+  display: grid;
+  grid-template-columns: 1fr;  /* Ensure the items are stacked in a single column */
+  gap: 1rem;  /* Adds space between each link */
+  background-color: #f9f9f9;  /* Background color (optional) */
+  margin: 30px;
+}
+
+/* Resource Links */
+.resources .resource-link {
+  color: #1e1e1e;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+/* Hover Effect */
+.resources .resource-link:hover {
+  color: goldenrod;
+}
+
+.book-cover {
+  border: solid 2px black;
+  box-shadow: 10px 10px #1e1e1e;
+}

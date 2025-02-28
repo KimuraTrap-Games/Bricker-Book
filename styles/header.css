@@ -2,18 +2,33 @@
 .header {
   background-color: lightgrey;  /* Keeps it visible when sticky */
   text-align: center;
-  padding: 2rem 0;  /* Reduced padding for better spacing */
+  padding: 10px;  /* Reduced padding for better spacing */
   border-bottom: solid 5px black;
+
+
   position: sticky;
   top: 0;
   z-index: 9999; /* Ensures it stays above other elements */
   width: 100%;
+
+  overflow-x: hidden;
 }
 
 /* Subtitle Styling */
 .header .subtitle {
   font-size: 14px;
   color: #1e1e1e;
+}
+
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h3 i {
+  font-size: 50px;
+  color: black;
 }
 
 /* Navigation Wrapper */
@@ -30,4 +45,23 @@
 .nav-links {
   display: flex;
   gap: 10px; /* Adjust spacing between buttons */
+}
+
+.action-btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  border: solid 2px black;
+  border-radius: 25px;
+  position: relative;
+}
+
+.action-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
 }
