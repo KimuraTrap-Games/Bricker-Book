@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: auto;
   }
   
   body {
@@ -45,6 +44,10 @@
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.container img {
+  width: 50%;
 }
 
 h1, h2 {
