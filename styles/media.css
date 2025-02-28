@@ -1,1 +1,283 @@
 /* Media Queries */
+
+/* Header MQ */
+
+/* For tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Slightly smaller subtitle */
+  }
+
+  .title-section {
+    flex-direction: column; /* Stack title and subtitle vertically */
+  }
+
+  .title h3 i {
+    font-size: 40px; /* Smaller icon for mobile/tablet */
+  }
+
+  .nav-links-wrapper {
+    padding: 0.5rem 0; /* Less padding for smaller screens */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 5px; /* Adjust gap for mobile */
+  }
+
+  .action-btn {
+    font-size: 14px; /* Smaller buttons for mobile */
+    padding: 8px;
+    margin: 10px 0;
+    right: 0; /* Fix alignment issues */
+  }
+}
+
+/* For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 6px; /* Further reduce padding */
+  }
+
+  .subtitle {
+    font-size: 16px; /* Smaller subtitle text */
+  }
+
+  .title h3 i {
+    font-size: 35px; /* Even smaller icon for mobile */
+  }
+
+  .nav-links-wrapper {
+    padding: 0.25rem 0; /* Further reduce padding */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack items vertically */
+    gap: 3px; /* Even smaller gap */
+  }
+
+  .action-btn {
+    font-size: 12px; /* Even smaller font size */
+    padding: 6px;
+    margin: 5px 0;
+    right: 0; /* Fix position */
+  }
+}
+
+/* For ultrawide screens (1920px and above) */
+@media (min-width: 1920px) {
+  .header {
+    padding: 20px; /* Increase padding for better spacing on large screens */
+  }
+
+  .subtitle {
+    font-size: 24px; /* Larger subtitle for better readability */
+  }
+
+  .title-section {
+    justify-content: flex-start; /* Align title and subtitle to the left */
+  }
+
+  .title h3 i {
+    font-size: 60px; /* Larger icon for more impact */
+  }
+
+  .nav-links-wrapper {
+    padding: 2rem 0; /* More padding for a spacious look */
+  }
+
+  .nav-links {
+    gap: 20px; /* Larger gap between items for wide screens */
+  }
+
+  .action-btn {
+    font-size: 18px; /* Larger buttons for better visibility */
+    padding: 18px 36px; /* Larger padding for better fit */
+    right: 0; /* Reset button alignment */
+  }
+}
+
+/* Footer MQ */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .footer {
+      padding: 1.5rem 0; /* Reduce padding for smaller screens */
+    }
+  
+    .footer p {
+      font-size: 0.9rem; /* Slightly smaller text for better fit */
+    }
+  }
+  
+  /* For small screens, like phones */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 1rem 0; /* Even smaller padding */
+    }
+  
+    .footer p {
+      font-size: 0.8rem; /* Further reduce text size for small screens */
+    }
+  }
+
+/* Homepage MQ */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .main {
+      padding: 2rem 0; /* Reduce padding for smaller screens */
+    }
+  
+    .book-overview {
+      width: 100%; /* Stack the book overview section */
+      float: none; /* Remove floating */
+      padding-right: 0;
+      margin-bottom: 2rem; /* Add some space between sections */
+    }
+  
+    .img {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Ensure aspect ratio is maintained */
+    }
+  
+    .book-cover-container img {
+      width: 100%; /* Ensure the book cover image is fully responsive */
+      float: none; /* Remove floating */
+    }
+  
+    .resources {
+      margin: 10px; /* Reduce margin */
+    }
+  }
+  
+  /* For small screens, like phones */
+  @media (max-width: 480px) {
+    .main {
+      padding: 1rem 0; /* Further reduce padding */
+    }
+  
+    .book-overview {
+      width: 100%; /* Stack sections in a single column */
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .img {
+      width: 100%; /* Full width image */
+      height: auto;
+    }
+  
+    .resources {
+      gap: 0.5rem; /* Reduce gap between items */
+    }
+  
+    .resources .resource-link {
+      font-size: 0.9rem; /* Slightly smaller text */
+    }
+  
+    .book-cover {
+      box-shadow: 5px 5px #1e1e1e; /* Smaller box shadow for mobile */
+    }
+  }
+
+/* Common MQ */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .cta-button {
+      padding: 12px 28px; /* Adjust button padding for smaller screens */
+      font-size: 14px; /* Smaller font size */
+      margin-right: 10px; /* Adjust margin */
+    }
+  
+    .container {
+      width: 90%; /* Increase container width on tablets for better fit */
+    }
+  
+    .container img {
+      width: 80%; /* Adjust image width for tablets */
+    }
+  
+    h1, h2 {
+      font-size: 2rem; /* Reduce header font size for smaller screens */
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust paragraph font size for readability */
+    }
+  }
+  
+  /* For small screens, like phones */
+  @media (max-width: 480px) {
+    .cta-button {
+      padding: 10px 24px; /* Smaller button padding for phones */
+      font-size: 12px; /* Even smaller font size */
+      margin-right: 8px; /* Adjust margin */
+    }
+  
+    .container {
+      width: 95%; /* Make container width almost full */
+    }
+  
+    .container img {
+      width: 100%; /* Make image full width */
+    }
+  
+    h1, h2 {
+      font-size: 1.75rem; /* Further reduce header font size */
+    }
+  
+    p {
+      font-size: 0.9rem; /* Slightly smaller paragraph font size for phones */
+    }
+  }
+
+/* Ultrawide Monitor MQ */
+
+/* For ultrawide screens (1920px and above) */
+@media (min-width: 1920px) {
+    .container {
+      width: 70%; /* Make the container narrower for better readability on ultrawide screens */
+    }
+  
+    .cta-button {
+      font-size: 18px; /* Larger buttons for better visibility */
+      padding: 18px 36px; /* Increase padding for a more prominent button */
+    }
+  
+    .container img {
+      width: 60%; /* Adjust image size for better proportional fit */
+    }
+  
+    h1, h2 {
+      font-size: 3rem; /* Larger header font size for more impact */
+    }
+  
+    p {
+      font-size: 1.2rem; /* Slightly larger paragraph text for better readability */
+    }
+  
+    .book-overview {
+      width: 40%; /* Reduce width to keep it balanced with other elements */
+    }
+  
+    .book-cover-container img {
+      width: 40%; /* Adjust image width to prevent it from feeling too stretched */
+    }
+  
+    /* Additional adjustments for the resources section */
+    .resources {
+      grid-template-columns: 1fr 1fr; /* Display two columns for resources on ultrawide */
+      gap: 2rem; /* Increase gap between items */
+    }
+  
+    .resources .resource-link {
+      font-size: 1.2rem; /* Larger font size for resource links */
+    }
+  }
+  
