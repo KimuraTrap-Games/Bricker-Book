@@ -3,6 +3,7 @@
   /* Main Section */
   .main {
     padding: 4rem 0;
+    overflow-x: hidden;
   }
   
   .book-overview {
