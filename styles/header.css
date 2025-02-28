@@ -26,6 +26,11 @@
   align-items: center;
 }
 
+.title h3 i {
+  font-size: 50px;
+  color: black;
+}
+
 /* Navigation Wrapper */
 .nav-links-wrapper {
   display: flex;

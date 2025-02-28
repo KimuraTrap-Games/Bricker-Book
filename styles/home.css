@@ -42,3 +42,8 @@
 .resources .resource-link:hover {
   color: goldenrod;
 }
+
+.book-cover {
+  border: solid 2px black;
+  box-shadow: 10px 10px #1e1e1e;
+}
