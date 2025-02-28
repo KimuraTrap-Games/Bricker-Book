@@ -16,44 +16,15 @@
 	  height: 50%;
   }
   
-  
-.cta-button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  float: left;
-  margin-right: 16px;
-}
-
-.cta-button:hover {background-color: #3e8e41}
-
-.cta-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;;
-}
-  
-  .image-container {
-    width: 45%;
+  .book-cover-container img {
+    width: 100%;
     float: right;
   }
-  
-  .neuro-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+    
   /* Resources Section */
   .resources {
     padding: 3rem 0;
-    background-color: #f7f7f7;
+    background-color: ;
   }
   
   .resources .resource-link {
@@ -64,17 +35,5 @@
   }
   
   .resources .resource-link:hover {
-    color: #007BFF;
+    color: goldenrod;
   }
-  
-  .nav-links-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-links {
-    display: flex;
-    gap: 10px; /* Adjust spacing between buttons */
-}

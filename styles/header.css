@@ -1,41 +1,33 @@
-/* Header Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-  
-  body {
-    font-family: 'Georgia', serif;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  h1, h2 {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Header Section */
-  .header {
-    background-color: #fff;
-    text-align: center;
-    padding: 5rem 0;
-  }
-  
-  .header .subtitle {
-    font-size: 1.3rem;
-    color: #777;
-  }
+/* Header Section */
+.header {
+  background-color: lightgrey;  /* Keeps it visible when sticky */
+  text-align: center;
+  padding: 2rem 0;  /* Reduced padding for better spacing */
+  border-bottom: solid 5px black;
+  position: sticky;
+  top: 0;
+  z-index: 9999; /* Ensures it stays above other elements */
+  width: 100%;
+}
+
+/* Subtitle Styling */
+.header .subtitle {
+  font-size: 20px;
+  color: #1e1e1e;
+}
+
+/* Navigation Wrapper */
+.nav-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: lightgrey;  /* Matches header for seamless sticky effect */
+  padding: 1rem 0;  /* Adds some spacing */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 10px; /* Adjust spacing between buttons */
+}
