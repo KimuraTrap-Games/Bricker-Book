@@ -15,9 +15,9 @@
 /* Button Styles */
 
 .cta-button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
   }
   
   .cta-button:active {
@@ -27,6 +27,7 @@
   }
 
   .cta-button {
+<<<<<<< Updated upstream
     background-color: #1e1e1e;
     border: none;
     color: white;
@@ -37,6 +38,17 @@
     font-size: 16px;
     cursor: pointer;
     margin-right: 16px;
+=======
+	background-color: black;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	text-decoration: none;
+	border: solid 2px black;
+	border-radius: 25px;
+	position: relative;
+>>>>>>> Stashed changes
   }
 
   /*Common Styles */
