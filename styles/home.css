@@ -16,8 +16,8 @@
 	  height: 50%;
   }
   
-  .image-container {
-    width: 45%;
+  .book-cover-container img {
+    width: 100%;
     float: right;
   }
     
