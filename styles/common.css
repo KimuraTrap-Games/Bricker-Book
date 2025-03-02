@@ -15,6 +15,7 @@
 /* Button Styles */
 
 .cta-button:hover {
+  opacity: 0.6;
   background-color: white;
   color: black;
   border: 1px solid black;
@@ -46,6 +47,7 @@
 	border: solid 2px black;
 	border-radius: 25px;
 	position: relative;
+	transition: 0.3s;
   }
 
   /*Common Styles */
