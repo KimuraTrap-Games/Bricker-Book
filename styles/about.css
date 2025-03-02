@@ -1,0 +1,57 @@
+/* Main Section */
+.main {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Book Overview - Adjusted Layout */
+  .book-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 2rem; /* Space between items */
+    align-items: center;
+  }
+  
+  /* Title Styling */
+  .book-overview h2 {
+    grid-column: span 2; /* Title stretches across both columns */
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  /* Image Styling */
+  .book-overview img {
+    width: 100%; /* Make images responsive */
+    max-width: 800px; /* Set max width */
+    height: auto;
+    border-radius: 8px;
+    border: solid 1px black;
+    box-shadow: 8px 8px #1e1e1e;
+}
+  
+  /* Text Styling */
+  .book-overview p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 600px; /* Ensures good readability */
+  }
+  
+  /* Align First Image to the Right of Text */
+  .book-overview img:first-of-type {
+    grid-column: 2;
+    grid-row: 2; /* Place it beside the paragraph */
+  }
+  
+  /* Make the Second Image Appear Below the Text */
+  .book-overview img:last-of-type {
+    grid-column: span 2; /* Stretch across both columns */
+    justify-self: center;
+  }
+  
