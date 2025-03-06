@@ -280,4 +280,67 @@
       font-size: 1.2rem; /* Larger font size for resource links */
     }
   }
-  
+
+/* Resource Page */
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .main {
+    padding: 20px 10px;
+  }
+
+  .resources-container {
+    padding: 50px; /* Reduce excessive padding */
+  }
+
+  .resources-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .resource-item {
+    flex-direction: column; /* Stack icon and link on small screens */
+    text-align: center;
+  }
+
+  .resource-item i {
+    font-size: 1.3rem;
+  }
+
+  .resource-item a {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets (601px to 900px) */
+@media (max-width: 900px) {
+  .resources-container {
+    padding: 100px;
+  }
+
+  .resources-container h1 {
+    font-size: 1.9rem;
+  }
+
+  .resource-item {
+    font-size: 1.1rem;
+  }
+
+  .resource-item i {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+  .resources-container {
+    padding: 200px; /* Maintain original spacing for larger screens */
+  }
+
+  .resource-item {
+    font-size: 1.3rem;
+  }
+
+  .resource-item i {
+    font-size: 1.6rem;
+  }
+}

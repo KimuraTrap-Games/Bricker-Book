@@ -1,0 +1,52 @@
+  /* Main Content */
+  .main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .resources-container {
+    background: white;
+    padding: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resources-container h1 {
+    font-size: 2rem;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+  }
+  
+  /* Resource Items */
+  .resource-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .resource-item a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .resource-item a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+  }
+  
+  /* Icons */
+  .resource-item i {
+    font-size: 1.5rem;
+    color: #444;
+    transition: color 0.3s ease;
+  }
+  
+  .resource-item a:hover i {
+    color: #0073e6;
+  }
+  
