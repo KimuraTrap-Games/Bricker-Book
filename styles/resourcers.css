@@ -5,6 +5,7 @@
   }
   
   .resources-container {
+    overflow-y: hidden;
     background: white;
     padding: 200px;
     border-radius: 8px;
