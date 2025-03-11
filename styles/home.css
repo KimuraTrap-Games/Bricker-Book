@@ -14,21 +14,24 @@
 
 .img {
   width: 50%;
-  height: 50%;
+  height: auto; /* Maintain aspect ratio */
 }
 
 .book-cover-container img {
-  width: 100%;
+  width: 50%%;
+  height: 50%; /* Maintain aspect ratio */
   float: right;
 }
 
 /* Resources Section */
 .resources {
   display: grid;
-  grid-template-columns: 1fr; /* Ensure the items are stacked in a single column */
+  grid-template-columns: 1fr; /* Single-column layout */
   gap: 1rem; /* Adds space between each link */
   background-color: #f9f9f9; /* Background color (optional) */
+  padding: 20px;
   margin: 30px;
+  border-radius: 5px;
 }
 
 /* Resource Links */
@@ -44,14 +47,43 @@
 }
 
 .book-cover {
-  border: solid 2px black;
+  border: 2px solid black;
   box-shadow: 10px 10px #1e1e1e;
+}
+
+/* Ensure the Buy Book section is properly aligned */
+.buy-book {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between elements */
+}
+
+/* Ensure the Spotify link button stays inline */
+.buy-book a {
+  display: inline-block;
+}
+
+/* Button Styles */
+.cta-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #333; /* Slightly lighter black for hover */
 }
 
 /* Dropdown Styles */
 .dropdown {
-  position: relative; /* Changed from absolute to relative */
-  display: inline-block;
+  position: relative;
+  display: inline-block; /* Ensures it stays inline with the button */
 }
 
 /* Dropdown button */
@@ -59,23 +91,29 @@
   background-color: black;
   color: white;
   border: none;
-  padding: 12px 20px; /* Adjusted padding */
+  padding: 12px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-button:hover {
+  background-color: #333; /* Slightly lighter black for hover */
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* Positions dropdown directly below button */
-  left: 0; /* Aligns dropdown with the button */
+  top: 100%;
+  left: 0;
   background-color: white;
   min-width: 200px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 10;
   border-radius: 5px;
+  overflow: hidden; /* Prevents content overflow */
 }
 
 /* Links inside the dropdown */
@@ -84,6 +122,7 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: background 0.3s ease;
 }
 
 /* Change color on hover */
@@ -95,4 +134,33 @@
 /* Show dropdown when hovering over button */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .book-overview {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .buy-book {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-button {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    left: 0;
+  }
 }
