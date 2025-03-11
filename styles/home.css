@@ -1,33 +1,33 @@
 /* Homepage Styles */
-  
-  /* Main Section */
-  .main {
-    padding: 4rem 0;
-    overflow-x: hidden;
-  }
-  
-  .book-overview {
-    width: 50%;
-    float: left;
-    padding-right: 2rem;
-  }
-  
-  .img {
-	  width: 50%;
-	  height: 50%;
-  }
-  
-  .book-cover-container img {
-    width: 100%;
-    float: right;
-  }
-    
+
+/* Main Section */
+.main {
+  padding: 4rem 0;
+  overflow-x: hidden;
+}
+
+.book-overview {
+  width: 50%;
+  float: left;
+  padding-right: 2rem;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+}
+
+.book-cover-container img {
+  width: 100%;
+  float: right;
+}
+
 /* Resources Section */
 .resources {
   display: grid;
-  grid-template-columns: 1fr;  /* Ensure the items are stacked in a single column */
-  gap: 1rem;  /* Adds space between each link */
-  background-color: #f9f9f9;  /* Background color (optional) */
+  grid-template-columns: 1fr; /* Ensure the items are stacked in a single column */
+  gap: 1rem; /* Adds space between each link */
+  background-color: #f9f9f9; /* Background color (optional) */
   margin: 30px;
 }
 
@@ -46,4 +46,53 @@
 .book-cover {
   border: solid 2px black;
   box-shadow: 10px 10px #1e1e1e;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative; /* Changed from absolute to relative */
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Adjusted padding */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positions dropdown directly below button */
+  left: 0; /* Aligns dropdown with the button */
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Show dropdown when hovering over button */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
